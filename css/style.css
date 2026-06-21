@@ -369,7 +369,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  /* Display the hamburger icon on mobile */
+  
   .mobile-menu {
     display: block;
     font-size: 2rem;
@@ -377,22 +377,22 @@ p {
     color: var(--light-text);
   }
   
-  /* Convert navigation links into a vertical dropdown panel */
+  
   .nav-links {
     display: none; 
     flex-direction: column;
     position: absolute;
-    top: 100%; /* Positions directly beneath the navbar */
+    top: 100%; 
     left: 0;
     width: 100%;
-    background-color: rgba(139, 69, 19, 0.98); /* Matching background color */
+    background-color: rgba(139, 69, 19, 0.98); 
     padding: 1.5rem 0;
     gap: 1.5rem;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
-  /* Target class added via JavaScript to reveal the menu */
+  
   .nav-links.active {
     display: flex;
   }
