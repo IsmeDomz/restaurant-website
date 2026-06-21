@@ -12,13 +12,19 @@
     
     <nav class="navbar">
         <a href="index.html" class="logo">Angkor Taste</a>
-        <ul class="nav-links">
+        
+        <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+     
+        <div class="mobile-menu" id="mobile-menu-btn">
+            <span>☰</span>
+        </div>
+    </nav>
      
         <div class="mobile-menu">
             <span>☰</span>
@@ -162,5 +168,15 @@
             &copy; 2026 Angkor Taste. All rights reserved.
         </div>
     </footer>
+</body>
+</html>
+<script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
